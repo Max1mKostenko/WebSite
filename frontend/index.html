@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
@@ -26,8 +27,8 @@
     <div class="main">
         <h4>Hi, I Am <span>Maxim Kostenko</span> 👋</h4>
         <p class="title">Creative FullStack Web Developer</p>
-        <p class="subtitle">I'm Design And Code Beautifully Simple Things And I Love What I Doing!</p>
-        <img src="assets/logo.png">
+        <p class="subtitle">I'm beginner web designer with 2 years of experience</p>
+        <img src="photo.jpg">
     </div>
 
     <div class="guarantee">
@@ -51,22 +52,9 @@
             </div>
             <i class='bx bx-chevron-right'></i>
         </div>
-<!--        <div class="item">-->
-<!--            <div class="icon">-->
-<!--                <i class='bx bx-laugh'></i>-->
-<!--            </div>-->
-<!--            <div class="info">-->
-<!--                <h3>+50</h3>-->
-<!--                <p>Happy Clients</p>-->
-<!--            </div>-->
-<!--            <i class='bx bx-chevron-right'></i>-->
-<!--        </div>-->
     </div>
 
-    <h5 class="seprator">Who I Am</h5>
-
     <div class="about">
-        <img src="assets/image.png">
         <div class="info">
             <h3>About Me</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque eveniet vitae fugit accusamus, cupiditate
@@ -119,8 +107,7 @@
 
     <footer>
         <div class="start">
-            <h3>Start a project</h3>
-            <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+            <h3>Start a project with me!</h3>
             <button>Let's do this</button>
         </div>
 
@@ -149,12 +136,15 @@
                 <h4>NewsLetter</h4>
                 <p>Enter your email and get notified about news, of.</p>
 
-                <form>
-                    <input type="email" placeholder="Your email address">
-                    <button><i class='bx bxl-telegram'></i></button>
+                <form action="/send-email" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit"><i class='bx bxl-telegram'>Send</i></button>
                 </form>
-
             </div>
+
+
+
 
         </div>
 
