@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request from flask_mail import Mail, Message
+from flask import Flask, render_template, request
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 mail = Mail(app)
@@ -21,7 +22,7 @@ def result():
         mail.send(msg)
         return render_template("result.html", result="Success!")
     else:
-        return render_template()
+        return "f"
 
 
 
